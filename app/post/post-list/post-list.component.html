@@ -1,0 +1,12 @@
+
+<mat-accordion multi="true" *ngIf="posts.length > 0"> <!--multi allows to open more then 1 accordion-->
+    <mat-expansion-panel *ngFor="let post of posts;let i=index">
+      <mat-expansion-panel-header>
+         {{post.title}}
+         <button mat-raised-button color="indigo" (click)="delete(i)" style="margin-left:75%">
+          Delete
+        </button>
+    </mat-expansion-panel-header>
+    <p>{{post.content}}</p>  
+  </mat-expansion-panel>
+</mat-accordion>

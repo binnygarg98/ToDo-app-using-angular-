@@ -1,0 +1,15 @@
+<h1 style="margin-left: 40%">TO DO APP  </h1>
+<hr/>
+<mat-card>
+    <mat-form-field>
+      <input matInput required placeholder="enter title here.." type="text" [(ngModel)]="enteredTitle">
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput required placeholder="enter content here.." rows="0" [(ngModel)]="enteredContent"></textarea>
+    </mat-form-field>
+    <button
+      mat-raised-button
+      color="accent"
+      (click)="onAddPost()">Add Content</button>
+  </mat-card>
+  
